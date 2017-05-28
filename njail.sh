@@ -9,7 +9,7 @@ usage() {
     echo "usage: -i INTERFACE -n NAMESPACE -a IP -r NAMESERVER -s PROG -c -q"
     echo "  -i INTERFACE            interface pattern like enp+"
     echo "  -n NAMESPACE            the namespace name"
-    echo "  -a IP                   ip in the namespace"
+    echo "  -a IP                   ip in the namespace, /24 subnet managed by njail, e.g. 10.200.200"
     echo "  -r NAMESERVER           nameserver for the namespace"
     echo "  -p PROG                 prog/script to run inside the netns, cleanup will be performed afterwards"
     echo "  -c                      flag, cleansup the namespace created with above options"
